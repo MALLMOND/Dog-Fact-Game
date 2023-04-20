@@ -1,7 +1,5 @@
 # Dog-Fact-Game
 
-
 To DO: 
-
-Create call to API
-Create Visuals
+  - Create call to API
+  - Create Visuals
