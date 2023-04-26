@@ -6,6 +6,9 @@
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
+import javafx.scene.control.Label;
 
 
 public class DogGameGUI extends Application
@@ -22,10 +25,20 @@ public class DogGameGUI extends Application
    public void start(Stage primaryStage)
    {
       //stage title
-      primaryStage.setTitle("Doggo Facts!");
+      primaryStage.setTitle("Dog Gone Dog Facts!");
+      
+      
+      Label messageLabel = new Label("Its a Fact!");
+      
+      HBox hbox = new HBox(messageLabel);
+      
+      Scene scene = new Scene(hbox);
+      
       
       //shows the window
       primaryStage.show();
+      
+      
       
    }
    
