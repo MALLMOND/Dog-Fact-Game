@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
+import javafx.geometry.Pos;
 
 
 public class DogGameGUI extends Application
@@ -27,19 +28,23 @@ public class DogGameGUI extends Application
       //stage title
       primaryStage.setTitle("Dog Gone Dog Facts!");
       
+      //Create a Label control
+      Label message1 = new Label("Its a Fact!");
       
-      Label messageLabel = new Label("Its a Fact!");
+      //Puts the label in an Hbox
+      HBox hbox = new HBox(message1);
       
-      HBox hbox = new HBox(messageLabel);
+      /*Creates a scene with the Hbox as its root node. 
+         800x600 resolution
+      */
+      Scene scene = new Scene(hbox, 800, 600);
       
-      Scene scene = new Scene(hbox);
-      
+      //Adds the scene to the stage
+      primaryStage.setScene(scene);
       
       //shows the window
       primaryStage.show();
-      
-      
-      
+            
    }
    
    
