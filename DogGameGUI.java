@@ -1,9 +1,11 @@
-import javafx.application.Application;
-import javafx.stage.Stage;
-
 /*
    Dog Game GUI Application
+   by Eric Reese, Michael Allmond, Fatiha Kariche
 */ 
+
+
+import javafx.application.Application;
+import javafx.stage.Stage;
 
 
 public class DogGameGUI extends Application
@@ -15,6 +17,7 @@ public class DogGameGUI extends Application
       launch(args);      
    }
    
+   
    @Override
    public void start(Stage primaryStage)
    {
@@ -25,7 +28,7 @@ public class DogGameGUI extends Application
       primaryStage.show();
       
    }
-
-
+   
+   
 
 }
