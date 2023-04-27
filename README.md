@@ -1,5 +1,5 @@
 # Dog-Fact-Game
 
 To DO: 
-  - Create call to API
-  - Create Visuals
+  - Work on developing app visuals 
+  - Configure controller and start creating variables
