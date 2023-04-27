@@ -47,16 +47,17 @@ public class DogGameGUI extends Application
 
 
       //Middle of Page True Button prompt
-      Button messageTrue = new Button("ITS A FACT!");
-      
+      Button trueButton = new Button("ITS A FACT!");
+      VBox vbox = new VBox(10, trueButton);
+      vbox.setAlignment(Pos.CENTER);
       
       //Middle of Page False Button Prompt
-      Button messageFalse = new Button("ITS FALSE!");
+      Button falseButton = new Button("ITS FALSE!");
       
       
       /* Creates a scene with the Hbox as its root node. 
       800x600 resolution */
-      Scene scene = new Scene(hbox, 800, 600);
+      Scene scene = new Scene(vbox, 800, 600);
       
       
       
