@@ -3,15 +3,22 @@
    by Eric Reese, Michael Allmond, Fatiha Kariche
 */ 
 
-import javafx.fxml.FXML;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
-import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.geometry.Pos;
+
+
+import javafx.fxml.FXML;
+
+
 
 
 public class DogGameGUI extends Application
@@ -39,16 +46,12 @@ public class DogGameGUI extends Application
 
 
 
-      //Middle of Page prompt
-      Label messageTrue = new Label("ITS A FACT!");
-      HBox hbox2 = new HBox(messageTrue);
-      hbox2.setAlignment(Pos.CENTER_LEFT);
+      //Middle of Page True Button prompt
+      Button messageTrue = new Button("ITS A FACT!");
       
       
-      //Middle of Page False Prompt
-      Label messageFalse = new Label("ITS FALSE!");
-      HBox hbox3 = new HBox(messageTrue);
-      hbox3.setAlignment(Pos.CENTER_RIGHT);
+      //Middle of Page False Button Prompt
+      Button messageFalse = new Button("ITS FALSE!");
       
       
       /* Creates a scene with the Hbox as its root node. 
@@ -58,7 +61,6 @@ public class DogGameGUI extends Application
       
       
       //*******Image Code goes here********
-      
       
       
       
