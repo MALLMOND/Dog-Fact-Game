@@ -1,5 +1,7 @@
 # Dog-Fact-Game
 
 To DO: 
-  - Work on developing app visuals 
+  - Implement API calls for:
+    - Random Dog Image
+    - Random Question Generator
   - Configure controller and start creating variables
