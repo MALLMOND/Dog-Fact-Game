@@ -5,6 +5,7 @@
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
@@ -13,8 +14,12 @@ import javafx.scene.control.Button;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.geometry.Pos;
 
+import javafx.geometry.Pos;
+import javafx.geometry.Insets;
+
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 
@@ -23,6 +28,8 @@ import javafx.fxml.FXML;
 
 public class DogGameGUI extends Application
 {
+   
+   private Label myLabel;
 
    public static void main(String[] args)
    {
@@ -39,31 +46,39 @@ public class DogGameGUI extends Application
       primaryStage.setTitle("Dog Gone: Dog Facts!");
       
       //Create a Label control, message, aligns top of page
-      Label message1 = new Label("Question:");
-      HBox hbox = new HBox(message1);
-      hbox.setAlignment(Pos.TOP_CENTER);
+      Label bannerText = new Label("Question:"); 
 
 
 
 
       //Middle of Page True Button prompt
       Button trueButton = new Button("ITS A FACT!");
-      VBox vbox = new VBox(10, trueButton);
-      vbox.setAlignment(Pos.CENTER);
-      
       //Middle of Page False Button Prompt
       Button falseButton = new Button("ITS FALSE!");
-      
-      
-      /* Creates a scene with the Hbox as its root node. 
-      800x600 resolution */
-      Scene scene = new Scene(vbox, 800, 600);
+      HBox hbox = new HBox(30, trueButton, falseButton);
+      hbox.setAlignment(Pos.TOP_CENTER);
       
       
       
       //*******Image Code goes here********
+      /*
+      Image dogImage = new Image("dogPhotos");
+      ImageView dogImage = new ImageView(dogImage);
+      
+      image.setPreserveRatio(true);
+      */
       
       
+      //VBox
+      VBox vbox = new VBox(100, bannerText, hbox);
+      vbox.setAlignment(Pos.CENTER);
+      
+      
+      
+      
+      /* Creates a scene with the Hbox as its root node. 
+      800x600 resolution */
+      Scene scene = new Scene(vbox, 600, 400);
       
       
       //Adds the scene to the stage
@@ -74,6 +89,16 @@ public class DogGameGUI extends Application
             
    }
    
+   /*Event handler for Button
+   class ButtonClickHandler implements EventHandler
+   {
    
-
+      @Override
+      public void handle(ActionEvent event)
+      {
+         myLabel.setText("That's Correct!");
+      }
+      
+   }
+   */
 }
