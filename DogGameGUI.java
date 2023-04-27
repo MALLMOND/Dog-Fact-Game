@@ -27,10 +27,11 @@ public class DogGameGUI extends Application
    @Override
    public void start(Stage primaryStage)
    {
+   
       //stage title
       primaryStage.setTitle("Dog Gone: Dog Facts!");
       
-      //Create a Label control
+      //Create a Label control, message, aligns top of page
       Label message1 = new Label("Question:");
       HBox hbox = new HBox(message1);
       hbox.setAlignment(Pos.TOP_CENTER);
@@ -50,12 +51,13 @@ public class DogGameGUI extends Application
       hbox3.setAlignment(Pos.CENTER_RIGHT);
       
       
-      /* 
-      Creates a scene with the Hbox as its root node. 
-      800x600 resolution
-      */
+      /* Creates a scene with the Hbox as its root node. 
+      800x600 resolution */
       Scene scene = new Scene(hbox, 800, 600);
       
+      
+      
+      //*******Image Code goes here********
       
       
       
