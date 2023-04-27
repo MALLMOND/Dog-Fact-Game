@@ -48,6 +48,7 @@ public class DogGameGUI extends Application
       
       //stage title
       primaryStage.setTitle("Dog Gone: Dog Facts!");
+      
 //     Create a Label control, message, aligns top of page
 //       Label bannerText = new Label("Question:"); 
 // 
@@ -85,7 +86,6 @@ public class DogGameGUI extends Application
 //       
 //
 
-       
       //Adds the scene to the stage
       primaryStage.setScene(scene);
       
