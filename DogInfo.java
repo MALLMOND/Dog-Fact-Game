@@ -1,3 +1,3 @@
 public class DogInfo{
-    public DogInfo[] data;
+    public DogResponse[] data;
 }
